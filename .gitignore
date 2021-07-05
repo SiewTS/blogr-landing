@@ -6,7 +6,6 @@
 *.fig
 backup/
 design/
-images/
 *.md
 *.txt
 node_modules
