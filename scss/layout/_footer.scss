@@ -1,0 +1,67 @@
+@import "../config/variables";
+
+.footer {
+    background-color: $vdarkBlackBlue;
+    border-top-right-radius: $radius;
+    margin-bottom: 0 !important;
+}
+.footer-logo {
+    margin: $spacing3 auto;
+}
+.flex-parent,
+.flex-gchild,
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-parent {
+    justify-content: space-evenly;
+}
+.flex-gchild {
+    margin-bottom: $spacing3 * 0.5;
+
+    &:nth-child(3) {
+        margin-bottom: $spacing3 * 0.4;
+    }
+}
+
+.footer-title {
+    color: $white;
+    font-weight: $fw500;
+}
+.footer-links {
+    line-height: $lHeightTwo;
+}
+.footer-links > a {
+    color: $grayishBlue;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// laptop view >=1281px (mobile to desktop breakpoint)
+@media screen and (min-width: 80rem) {
+    .footer-logo {
+        margin: 0;
+    }
+    .flex-parent {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .flex-child {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer-logo {
+        flex-basis: 10%;
+    }
+    .flex-child {
+        flex-basis: 90%;
+    }
+    .flex-gchild,
+    .footer-links {
+        align-items: flex-start;
+    }
+}

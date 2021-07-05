@@ -1,0 +1,153 @@
+@import "../components/buttons";
+@import "../config/variables";
+
+// Style default in mobile
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(130deg, $bgvlightRed 10%, $bgLightRed 80%);
+    border-bottom-left-radius: $radius;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    // svg bg
+    &::after {
+        content: url(../../../images/bg-pattern-intro.svg);
+        transform: scale(0.4);
+        position: absolute;
+        top: -72rem;
+        left: -82rem;
+    }
+}
+// Landing Area
+.landing-area {
+    width: 100% !important;
+    height: 68%;
+    text-align: center;
+
+    & > div {
+        padding: 0 $paddingS;
+    }
+    & > div h5 {
+        color: $grayishBlue;
+    }
+}
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: $paddingS;
+}
+// login and signup btns
+.btn-login {
+    @include btnStyle($vdarkBlue, transparent, transparent);
+}
+.btn-signup {
+    @include btnStyle(
+        $white,
+        linear-gradient(90deg, $bgvlightRed 0%, $bgLightRed 100%),
+        transparent
+    );
+}
+.btn-sff {
+    @include btnStyle1;
+}
+.btn-lm {
+    @include btnStyle($white, transparent, $white);
+
+    &:hover {
+        @include btnStyle($vlightRed, $white, transparent);
+    }
+}
+// <= than 320px
+@media screen and (max-width: 20rem) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .btn {
+            margin-top: $marginS;
+        }
+    }
+}
+// mobile view >=375px
+@media screen and (min-width: 23.4rem) {
+    header {
+        // svg bg
+        &::after {
+            transform: scale(0.45);
+            top: -70rem;
+            left: -78rem;
+        }
+    }
+}
+// tablet view >=600px
+@media screen and (min-width: 37.5rem) {
+    header {
+        // svg bg
+        &::after {
+            transform: scale(0.55);
+            top: -73rem;
+            left: -66rem;
+        }
+    }
+    .landing-area {
+        height: 60%;
+    }
+    .btn-container {
+        justify-content: center;
+
+        & .btn {
+            margin: 0 $spacing1;
+        }
+    }
+}
+// tablet / small monitor view >=961px
+@media screen and (min-width: 60rem) {
+    header {
+        // svg bg
+        &::after {
+            transform: scale(0.65);
+            top: -75rem;
+            left: -54rem;
+        }
+    }
+}
+// laptop view >=1281px
+@media screen and (min-width: 80rem) {
+    header {
+        // svg bg
+        &::after {
+            transform: scale(0.85);
+            top: -80rem;
+            left: -38rem;
+        }
+    }
+    .btn-login {
+        color: $grayishBlue;
+
+        &:hover {
+            color: $white;
+        }
+    }
+    .btn-signup {
+        @include btnStyle1;
+    }
+}
+// desktop view >=1440px
+@media screen and (min-width: 90rem) {
+    header {
+        // svg bg
+        &::after {
+            transform: scale(1);
+            top: -83rem;
+            left: -24rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+// mobile view >=375px
+@media screen and (min-width: 23.4rem) {
+}
+// tablet view >=600px
+@media screen and (min-width: 37.5rem) {
+}
+// tablet / small monitor view >=961px
+@media screen and (min-width: 60rem) {
+}
+// laptop view >=1281px (mobile to desktop breakpoint)
+@media screen and (min-width: 80rem) {
+    // Last section
+    .last-section {
+        & .feature-container .feature-child-img {
+            order: unset;
+            position: relative;
+            top: 3rem;
+            left: -25rem;
+        }
+    }
+}
+// desktop view >=1440px
+@media screen and (min-width: 90rem) {
+    // Last section
+    .last-section {
+        & .feature-container .feature-child-img {
+            left: -30rem;
+        }
+    }
+}

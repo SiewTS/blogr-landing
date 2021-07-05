@@ -1,0 +1,111 @@
+/* ---------------
+"Designed for the Future" Section
+------------------ */
+.dftf-section {
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.feature-container,
+.feature-child-img,
+.mobile-graphic {
+    width: 100%;
+}
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.feature-child-img {
+    margin: $spacing3 auto $spacing1;
+}
+.mobile-graphic {
+    max-width: 500px;
+    transform: scale(1.2);
+}
+.desktop-graphic {
+    display: none;
+}
+.feature-child-desc {
+    margin: $spacing3 auto;
+}
+.desc-container {
+    width: 95%;
+    max-width: 550px;
+    margin: 0 auto $spacing3;
+}
+.feature-child-desc .desc-title {
+    padding: 0 $spacing3;
+}
+.desc-para {
+    line-height: $lHeightTwo;
+}
+
+/* ---------------
+MEDIA QUERIES
+------------------ */
+
+// <= than 320px
+@media screen and (max-width: 20rem) {
+}
+// mobile view >=375px
+@media screen and (min-width: 23.4rem) {
+}
+// tablet view >=600px
+@media screen and (min-width: 37.5rem) {
+    // dftf section
+    .mobile-graphic {
+        // max-width: 500px;
+        transform: scale(1);
+    }
+}
+// tablet / small monitor view >=961px
+@media screen and (min-width: 60rem) {
+}
+// laptop view >=1281px (mobile to desktop breakpoint)
+@media screen and (min-width: 80rem) {
+    // dftf section
+    .dftf-section {
+        overflow: hidden;
+    }
+    .feature-container {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .feature-child-img {
+        order: 2;
+    }
+    .mobile-graphic {
+        display: none;
+    }
+    .desktop-graphic {
+        display: block;
+        position: relative;
+        top: -12rem;
+        right: -1rem;
+    }
+    .feature-child-img,
+    .feature-child-desc {
+        width: 50%;
+    }
+    .feature-child-desc {
+        margin-top: $spacing6;
+    }
+    .desc-container {
+        text-align: left;
+    }
+    .feature-child-desc .desc-title {
+        padding: 0;
+    }
+}
+// desktop view >=1440px
+@media screen and (min-width: 90rem) {
+    .desktop-graphic {
+        right: -5rem;
+    }
+}
