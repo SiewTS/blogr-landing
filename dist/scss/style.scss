@@ -1,0 +1,179 @@
+@import "./config/variables";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./layout/attribution";
+@import "./layout/dftf";
+@import "./layout/infra";
+@import "./layout/last";
+
+// reset css
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $ff-secondary;
+    font-size: $bodySize;
+    // background-color: rgb(51, 50, 50);
+    background-color: $white;
+    color: $vdarkGrayishBlue;
+    line-height: $lHeightOne;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $white;
+}
+// site wise
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: $lHeightOne;
+    margin-bottom: $marginS;
+    font-family: $ff-primary;
+}
+h1 {
+    font-size: 2.1rem;
+    font-weight: $fw600;
+}
+h2 {
+    font-size: 1.95rem;
+    font-weight: $fw700;
+}
+h3 {
+    font-size: 1.49rem;
+}
+h4 {
+    font-size: 1.4rem;
+}
+h5 {
+    font-size: 1.1rem;
+    font-weight: $fw300;
+}
+h1,
+h2,
+h5 {
+    color: $white;
+}
+h3,
+h4 {
+    color: $vdarkBlue;
+    font-weight: $fw700;
+}
+p {
+    margin-bottom: $marginS;
+}
+.section {
+    padding: $spacing3 $spacing3 * 0.5;
+}
+.section-title {
+    margin-top: $spacing3;
+}
+.btn {
+    @extend %btn;
+}
+.fixed-width {
+    margin: 0 auto;
+    width: 98%;
+    max-width: $maxWidth;
+}
+
+/* ---------------
+Last Section
+------------------ */
+
+// !--- MEDIA QUERIES ---
+// <= than 320px
+@media screen and (max-width: 20rem) {
+    body {
+        font-size: $bodySize - 3px;
+    }
+}
+// mobile view >=375px
+@media screen and (min-width: 23.4rem) {
+}
+// tablet view >=600px
+@media screen and (min-width: 37.5rem) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.69rem;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+// tablet / small monitor view >=961px
+@media screen and (min-width: 60rem) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 1.79rem;
+    }
+    h4 {
+        font-size: 1.7rem;
+    }
+    h5 {
+        font-size: 1.15rem;
+    }
+}
+// laptop view >=1281px (mobile to desktop breakpoint)
+@media screen and (min-width: 80rem) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.89rem;
+    }
+    h4 {
+        font-size: 1.69rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+    .section {
+        padding: $spacing3 $spacing6;
+    }
+    .section-title {
+        margin-top: $spacing6;
+    }
+}
+// desktop view >=1440px
+@media screen and (min-width: 90rem) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    body {
+        margin: 0 auto;
+        // max-width: 1920px;
+    }
+}

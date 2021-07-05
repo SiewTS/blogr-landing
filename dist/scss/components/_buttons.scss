@@ -1,0 +1,25 @@
+@import "../config/variables";
+// buttons essentials
+%btn {
+    display: block;
+    width: 100%;
+    max-width: $fixedWidth;
+    text-align: center;
+    border-radius: $radius;
+    padding: 0.7rem;
+    font-weight: $fw700;
+    cursor: pointer;
+}
+// buttons with different styles
+@mixin btnStyle($btnTxt, $btnBg, $btnBorder) {
+    border: 1px solid $btnBorder;
+    color: $btnTxt;
+    background: $btnBg;
+}
+@mixin btnStyle1 {
+    @include btnStyle($vlightRed, $white, transparent);
+
+    &:hover {
+        @include btnStyle($white, $vlightRed, transparent);
+    }
+}

@@ -1,0 +1,1001 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 8.5rem;
+  text-align: center;
+  border-radius: 6.25rem;
+  padding: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 8.5rem;
+  text-align: center;
+  border-radius: 6.25rem;
+  padding: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(130deg, #ff8f70 10%, #ff3d54 80%);
+  border-bottom-left-radius: 6.25rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+header::after {
+  content: url(../../../images/bg-pattern-intro.svg);
+  transform: scale(0.4);
+  position: absolute;
+  top: -72rem;
+  left: -82rem;
+}
+
+.landing-area {
+  width: 100% !important;
+  height: 68%;
+  text-align: center;
+}
+
+.landing-area > div {
+  padding: 0 1rem;
+}
+
+.landing-area > div h5 {
+  color: #c8c8cb;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.btn-login {
+  border: 1px solid transparent;
+  color: #1f3f5b;
+  background: transparent;
+}
+
+.btn-signup {
+  border: 1px solid transparent;
+  color: #fff;
+  background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
+}
+
+.btn-sff {
+  border: 1px solid transparent;
+  color: #ff7a85;
+  background: #fff;
+}
+
+.btn-sff:hover {
+  border: 1px solid transparent;
+  color: #fff;
+  background: #ff7a85;
+}
+
+.btn-lm {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.btn-lm:hover {
+  border: 1px solid transparent;
+  color: #ff7a85;
+  background: #fff;
+}
+
+@media screen and (max-width: 20rem) {
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-container .btn {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 23.4rem) {
+  header::after {
+    transform: scale(0.45);
+    top: -70rem;
+    left: -78rem;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  header::after {
+    transform: scale(0.55);
+    top: -73rem;
+    left: -66rem;
+  }
+  .landing-area {
+    height: 60%;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+  .btn-container .btn {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  header::after {
+    transform: scale(0.65);
+    top: -75rem;
+    left: -54rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  header::after {
+    transform: scale(0.85);
+    top: -80rem;
+    left: -38rem;
+  }
+  .btn-login {
+    color: #c8c8cb;
+  }
+  .btn-login:hover {
+    color: #fff;
+  }
+  .btn-signup {
+    border: 1px solid transparent;
+    color: #ff7a85;
+    background: #fff;
+  }
+  .btn-signup:hover {
+    border: 1px solid transparent;
+    color: #fff;
+    background: #ff7a85;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  header::after {
+    transform: scale(1);
+    top: -83rem;
+    left: -24rem;
+  }
+}
+
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+nav {
+  height: 10%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nav-toggle,
+.nav-close {
+  cursor: pointer;
+  transition: all 0.3s linear 3s;
+}
+
+.nav-bar {
+  height: auto;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav-links,
+.links-container,
+.drop-down,
+.mobile-login-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-header,
+.nav-bar,
+.links-container,
+.mobile-nav-links,
+.mobile-login-signup > li,
+.drop-down {
+  width: 100%;
+}
+
+.links-container,
+.links {
+  margin-bottom: 1rem;
+}
+
+.links-title {
+  color: #1f3f5b;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.drop-down {
+  background-color: #c8c8cb;
+  margin-top: 1rem;
+  padding: 1rem 1rem 0;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-bar,
+.drop-down {
+  border-radius: 0.3rem;
+}
+
+.arr-dark,
+.arr-light {
+  margin-left: 0.2rem;
+}
+
+.arr-dark,
+.arr-light,
+.links {
+  cursor: pointer;
+}
+
+.arr-light {
+  display: none;
+}
+
+.links {
+  color: #3f4164;
+}
+
+.mobile-login-signup {
+  border-top: 1px solid #c8c8cb;
+}
+
+.mobile-login-signup > li {
+  max-width: 300px;
+}
+
+.mobile-login-signup > li,
+.mobile-login-signup > li > a {
+  margin: 0.2rem auto;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+nav {
+  z-index: 30;
+}
+
+.landing-area {
+  z-index: 20;
+}
+
+/* Media Queries */
+@media screen and (min-width: 80rem) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-header {
+    width: 15%;
+    margin: 0;
+  }
+  .nav-toggle,
+  .nav-close {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: unset;
+  }
+  .mobile-nav-links {
+    width: 80%;
+  }
+  .mobile-nav-links,
+  .links-container,
+  .mobile-login-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .links-container {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: 1.5rem;
+  }
+  .arr-dark {
+    display: none;
+  }
+  .arr-light {
+    display: inline;
+  }
+  .drop-down {
+    background-color: #fff;
+    padding: 1.5rem;
+    position: absolute;
+    top: 7rem;
+    max-width: 10.2rem;
+    align-items: flex-start;
+    box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.1);
+  }
+  .drop-down > .links:last-child {
+    margin: 0;
+  }
+  .links-title {
+    color: #c8c8cb;
+  }
+  .links-title:hover {
+    color: #fff;
+  }
+  .linktitle-active {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .links {
+    color: #000;
+  }
+  .links:hover {
+    font-weight: 500;
+  }
+  .mobile-login-signup {
+    width: 29%;
+    border: none;
+  }
+  .mobile-login-signup > li > a {
+    margin: 0;
+  }
+}
+
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+.footer {
+  background-color: #25252d;
+  border-top-right-radius: 6.25rem;
+  margin-bottom: 0 !important;
+}
+
+.footer-logo {
+  margin: 3rem auto;
+}
+
+.flex-parent,
+.flex-gchild,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-parent {
+  justify-content: space-evenly;
+}
+
+.flex-gchild {
+  margin-bottom: 1.5rem;
+}
+
+.flex-gchild:nth-child(3) {
+  margin-bottom: 1.2rem;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer-links {
+  line-height: 2;
+}
+
+.footer-links > a {
+  color: #c8c8cb;
+}
+
+.footer-links > a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 80rem) {
+  .footer-logo {
+    margin: 0;
+  }
+  .flex-parent {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .flex-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-logo {
+    flex-basis: 10%;
+  }
+  .flex-child {
+    flex-basis: 90%;
+  }
+  .flex-gchild,
+  .footer-links {
+    align-items: flex-start;
+  }
+}
+
+/* ---------------
+Colors 
+---------------*/
+/* ---------------
+Fonts
+---------------*/
+/* ---------------
+Spacings
+---------------*/
+/* ---------------
+Others
+---------------*/
+.attribution {
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+.attribution > a {
+  color: #1f3f5b;
+}
+
+.attribution > a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------
+"Designed for the Future" Section
+------------------ */
+.dftf-section {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.feature-container,
+.feature-child-img,
+.mobile-graphic {
+  width: 100%;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-child-img {
+  margin: 3rem auto 1rem;
+}
+
+.mobile-graphic {
+  max-width: 500px;
+  transform: scale(1.2);
+}
+
+.desktop-graphic {
+  display: none;
+}
+
+.feature-child-desc {
+  margin: 3rem auto;
+}
+
+.desc-container {
+  width: 95%;
+  max-width: 550px;
+  margin: 0 auto 3rem;
+}
+
+.feature-child-desc .desc-title {
+  padding: 0 3rem;
+}
+
+.desc-para {
+  line-height: 2;
+}
+
+/* ---------------
+MEDIA QUERIES
+------------------ */
+@media screen and (min-width: 37.5rem) {
+  .mobile-graphic {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .dftf-section {
+    overflow: hidden;
+  }
+  .feature-container {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .feature-child-img {
+    order: 2;
+  }
+  .mobile-graphic {
+    display: none;
+  }
+  .desktop-graphic {
+    display: block;
+    position: relative;
+    top: -12rem;
+    right: -1rem;
+  }
+  .feature-child-img,
+  .feature-child-desc {
+    width: 50%;
+  }
+  .feature-child-desc {
+    margin-top: 6rem;
+  }
+  .desc-container {
+    text-align: left;
+  }
+  .feature-child-desc .desc-title {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .desktop-graphic {
+    right: -5rem;
+  }
+}
+
+/* ---------------
+"State of the Art" Section
+------------------ */
+.infra-section {
+  padding: 6rem 0 3rem !important;
+  width: 100%;
+}
+
+.infra-bg {
+  width: 100% !important;
+  height: 100vh;
+}
+
+.iphone {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 50%;
+  position: relative;
+  top: -10rem;
+  z-index: 10;
+}
+
+.iphone-img {
+  width: 100%;
+  transform: scale(1.05);
+}
+
+.infra-graphicBg {
+  width: 100%;
+  height: 95vh;
+  border-top-right-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+  background: linear-gradient(100deg, #2c2d3f 10%, #3f4164 90%);
+  position: relative;
+  top: -17rem;
+  overflow: hidden;
+}
+
+.infra-graphicBg .desc-container {
+  margin: 14.4rem auto 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.infra-graphicBg .desc-para {
+  padding: 0 1.5rem;
+  color: #fff;
+}
+
+.infra-graphicBg::after {
+  display: block;
+  transform: scale(0.6);
+  content: url(../../images/bg-pattern-circles.svg);
+  position: relative;
+  top: -64.5rem;
+  left: -12rem;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .infra-bg {
+    height: 100vh;
+  }
+  .iphone-img {
+    transform: scale(1);
+  }
+  .infra-graphicBg {
+    height: 98vh;
+    top: -15rem;
+  }
+  .infra-graphicBg .desc-container {
+    margin: 18rem auto 3rem;
+  }
+  .infra-graphicBg::after {
+    transform: scale(0.85);
+    top: -62rem;
+    left: -10rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .infra-bg {
+    height: 90vh;
+  }
+  .infra-graphicBg {
+    height: 85vh;
+    top: -13rem;
+  }
+  .infra-graphicBg .desc-container {
+    margin: 16.2rem auto 3rem;
+  }
+  .infra-graphicBg .desc-para {
+    padding: 0 1rem;
+  }
+  .infra-graphicBg::after {
+    transform: scale(0.9);
+    top: -63rem;
+    left: -2rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .infra-bg {
+    height: 40vh;
+  }
+  .iphone {
+    margin: 0;
+    height: 50%;
+    position: relative;
+    top: -18rem;
+    left: 9rem;
+  }
+  .iphone-img {
+    width: 100%;
+    transform: scale(1.05);
+  }
+  .infra-graphicBg {
+    display: grid;
+    padding: 6rem 0;
+    height: 57vh;
+    top: -23rem;
+  }
+  .infra-graphicBg .desc-container {
+    width: 100%;
+    text-align: left;
+    margin: 0 6rem 0 0;
+    justify-self: flex-end;
+  }
+  .infra-graphicBg .desc-para {
+    padding: 0;
+  }
+  .infra-graphicBg::after {
+    transform: scale(0.9);
+    top: -48rem;
+    left: -16rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .iphone {
+    top: -17rem;
+  }
+  .infra-graphicBg .desc-container {
+    margin: 0 9rem 0 0;
+  }
+  .infra-graphicBg::after {
+    transform: scale(1);
+    top: -50rem;
+    left: -13rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .last-section .feature-container .feature-child-img {
+    order: unset;
+    position: relative;
+    top: 3rem;
+    left: -25rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .last-section .feature-container .feature-child-img {
+    left: -30rem;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #4b5862;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.95rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.49rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h5 {
+  color: #fff;
+}
+
+h3,
+h4 {
+  color: #1f3f5b;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.section-title {
+  margin-top: 3rem;
+}
+
+.fixed-width {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 80rem;
+}
+
+/* ---------------
+Last Section
+------------------ */
+@media screen and (max-width: 20rem) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.69rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.79rem;
+  }
+  h4 {
+    font-size: 1.7rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.89rem;
+  }
+  h4 {
+    font-size: 1.69rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  .section {
+    padding: 3rem 6rem;
+  }
+  .section-title {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  body {
+    margin: 0 auto;
+  }
+}

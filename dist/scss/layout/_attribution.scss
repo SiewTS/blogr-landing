@@ -1,0 +1,15 @@
+@import "../config/variables";
+
+.attribution {
+    color: $black;
+    padding: $paddingS;
+    text-align: center;
+
+    & > a {
+        color: $vdarkBlue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
