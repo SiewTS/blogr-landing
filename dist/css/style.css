@@ -89,7 +89,7 @@ header {
 }
 
 header::after {
-  content: url(../../../images/bg-pattern-intro.svg);
+  content: url(../../images/bg-pattern-intro.svg);
   transform: scale(0.4);
   position: absolute;
   top: -72rem;
