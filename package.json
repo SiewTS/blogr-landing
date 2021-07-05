@@ -1,0 +1,15 @@
+{
+    "name": "blogr-2",
+    "version": "1.0.0",
+    "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://siewts.github.io/blogr-landing",
+    "dependencies": {
+        "gh-pages": "^3.2.3"
+    }
+}
