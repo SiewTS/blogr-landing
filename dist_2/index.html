@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <!-- CSS3 -->
+        <link rel="stylesheet" href="./public/normalize.css" />
+        <link rel="stylesheet" href="./public/style.css" />
+
+        <title>Frontend Mentor | [Blogr]</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <nav class="header__nav">
+                <!-- nav header -->
+                <div class="nav__nav-header">
+                    <div class="nav-header__logo">
+                        <a href="#"
+                            ><img src="./images/logo.svg" alt="Blogr Logo"
+                        /></a>
+                    </div>
+                    <div class="nav-header__menu nav-header__menu-open">
+                        <img src="./images/icon-hamburger.svg" alt="open menu" />
+                    </div>
+                    <div
+                        class="
+                            nav-header__menu
+                            nav-header__menu-close
+                            nav-header__menu-close--hide
+                        "
+                    >
+                        <img src="./images/icon-close.svg" alt="close menu" />
+                    </div>
+                </div>
+                <!-- nav options -->
+                <div class="nav__modal nav__modal--hide">
+                    <div class="modal__nav-opt">
+                        <div class="nav-opt__links">
+                            <div class="links__container">
+                                <div class="container__title" data-id="product">
+                                    Product
+                                    <img
+                                        src="./images/icon-arrow-light.svg"
+                                        alt=""
+                                        class="
+                                            title__arr
+                                            title__arr--hide
+                                            title__arr-light
+                                        "
+                                    />
+                                    <img
+                                        src="./images/icon-arrow-dark.svg"
+                                        alt=""
+                                        class="
+                                            title__arr
+                                            title__arr--show
+                                            title__arr-dark
+                                        "
+                                    />
+                                </div>
+                                <div
+                                    class="
+                                        container__drop-down
+                                        container__drop-down--hide
+                                    "
+                                    id="product"
+                                >
+                                    <a href="#" class="drop-down__link"
+                                        >Overview</a
+                                    >
+                                    <a href="#" class="drop-down__link"
+                                        >Pricing</a
+                                    >
+                                    <a href="#" class="drop-down__link"
+                                        >Marketplace</a
+                                    >
+                                    <a href="#" class="drop-down__link"
+                                        >Features</a
+                                    >
+                                    <a href="#" class="drop-down__link"
+                                        >Integrations</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="links__container">
+                                <div class="container__title" data-id="company">
+                                    Company
+                                    <img
+                                        src="./images/icon-arrow-light.svg"
+                                        alt=""
+                                        class="
+                                            title__arr
+                                            title__arr--hide
+                                            title__arr-light
+                                        "
+                                    />
+                                    <img
+                                        src="./images/icon-arrow-dark.svg"
+                                        alt=""
+                                        class="
+                                            title__arr
+                                            title__arr--show
+                                            title__arr-dark
+                                        "
+                                    />
+                                </div>
+                                <div
+                                    class="
+                                        container__drop-down
+                                        container__drop-down--hide
+                                    "
+                                    id="company"
+                                >
+                                    <a href="#" class="drop-down__link">About</a>
+                                    <a href="#" class="drop-down__link">Team</a>
+                                    <a href="#" class="drop-down__link">Blog</a>
+                                    <a href="#" class="drop-down__link"
+                                        >Careers</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="links__container">
+                                <div class="container__title" data-id="connect">
+                                    Connect
+                                    <img
+                                        src="./images/icon-arrow-light.svg"
+                                        alt=""
+                                        class="
+                                            title__arr
+                                            title__arr--hide
+                                            title__arr-light
+                                        "
+                                    />
+                                    <img
+                                        src="./images/icon-arrow-dark.svg"
+                                        alt=""
+                                        class="
+                                            title__arr
+                                            title__arr--show
+                                            title__arr-dark
+                                        "
+                                    />
+                                </div>
+                                <div
+                                    class="
+                                        container__drop-down
+                                        container__drop-down--hide
+                                    "
+                                    id="connect"
+                                >
+                                    <a href="#" class="drop-down__link"
+                                        >Contact</a
+                                    >
+                                    <a href="#" class="drop-down__link"
+                                        >Newsletter</a
+                                    >
+                                    <a href="#" class="drop-down__link"
+                                        >LinkedIn</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- user login / signup -->
+                        <div class="nav-opt__login-ctn">
+                            <a
+                                href="#"
+                                id="login"
+                                class="login-ctn__btn login-ctn__btn-login"
+                                >Login</a
+                            >
+                            <a
+                                href="#"
+                                id="signup"
+                                class="login-ctn__btn login-ctn__btn-signup"
+                                >Sign Up</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__cta">
+                <div class="cta__content">
+                    <h1 class="cta__title">A modern publishing platform</h1>
+                    <h5 class="cta__subtitle">
+                        Grow your audience and build your online brand
+                    </h5>
+
+                    <div class="cta__btn-ctn">
+                        <a class="btn-ctn__btn btn-ctn__btn-sff"
+                            >Start for Free</a
+                        >
+                        <a class="btn-ctn__btn btn-ctn__btn-lm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- content-1 -->
+        <section class="content-1 section">
+            <h3 class="content-1__title txt-title">Designed for the future</h3>
+            <div class="content-1__flex-ctn">
+                <div class="flex-ctn__img">
+                    <img
+                        src="./images/illustration-editor-mobile.svg"
+                        alt=""
+                        class="img__mobile-img"
+                    />
+                    <img
+                        src="./images/illustration-editor-desktop.svg"
+                        alt=""
+                        class="img__desktop-img"
+                    />
+                </div>
+                <div class="flex-ctn__desc">
+                    <div class="desc__ctn">
+                        <h4 class="ctn__title">
+                            Introducing an extensible editor
+                        </h4>
+                        <p class="ctn__para">
+                            Blogr features an exceedingly intuitive interface
+                            which lets you focus on one thing: creating content.
+                            The editor supports management of multiple blogs and
+                            allows easy manipulation of embeds such as images,
+                            videos, and Markdown. Extensibility with plugins and
+                            themes provide easy ways to add functionality or
+                            change the looks of a blog.
+                        </p>
+                    </div>
+                    <div class="desc__ctn">
+                        <h4 class="ctn__title">Robust content management</h4>
+                        <p class="ctn__para">
+                            Flexible content management enables users to easily
+                            move through posts. Increase the usability of your
+                            blog by adding customized categories, sections,
+                            format, or flow. With this functionality, you’re in
+                            full control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of content-1 -->
+        <!-- content-2 -->
+        <section class="content-2 section">
+            <div class="content-2__img">
+                <img
+                    src="./images/illustration-phones.svg"
+                    alt=""
+                    class="img__iphone-img"
+                />
+            </div>
+            <div class="content-2__ctn">
+                <div class="desc__ctn desc__ctn--pop">
+                    <h2 class="ctn__title ctn__title--bigger ctn__title--white">
+                        State of the Art Infrastructure
+                    </h2>
+                    <p class="ctn__para ctn__para--white">
+                        With reliability and speed in mind, worldwide data
+                        centers provide the backbone for ultra-fast connectivity.
+                        This ensures your site will load instantly, no matter
+                        where your readers are, keeping your site competitive.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end of content-2 -->
+
+        <!-- Attribution to Frontend Mentor -->
+        <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/SiewTS" target="_blank"
+                >Siew Tian Sheng</a
+            >.
+        </div>
+        <!-- JavaScript -->
+        <script src="./js/index.js"></script>
+    </body>
+</html>

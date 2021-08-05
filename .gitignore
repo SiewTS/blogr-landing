@@ -9,6 +9,7 @@ design/
 *.md
 *.txt
 node_modules
+gulpfile.js
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################

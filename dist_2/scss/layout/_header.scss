@@ -1,0 +1,159 @@
+@import "../components/btn";
+
+.header {
+    height: auto;
+    padding: 2rem 1rem;
+    background: linear-gradient(130deg, $vl-red 10%, $l-red 80%);
+    border-bottom-left-radius: $radius-lg;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    &::after {
+        content: url(../images/bg-pattern-intro.svg);
+        transform: scale(0.4);
+        position: absolute;
+        top: -59rem;
+        left: -64rem;
+    }
+}
+.header__nav,
+.cta__content {
+    display: flex;
+    flex-direction: column;
+}
+.nav__nav-header,
+.header__cta {
+    position: relative;
+    z-index: 20;
+}
+.header__cta {
+    height: auto;
+    margin: 5rem 0;
+}
+.cta__content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.cta__title,
+.cta__subtitle {
+    font-family: $ff-secondary;
+    color: $white;
+}
+.cta__title {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: $fw500;
+}
+.cta__subtitle {
+    margin: 0.5rem 0 2rem;
+    font-size: 0.85rem;
+    font-weight: $fw300;
+}
+.btn-ctn__btn {
+    @extend %cta-btn;
+}
+.btn-ctn__btn-sff {
+    @include btn($l-red, $white, $white);
+
+    &:hover {
+        @include btn($white, $vl-red, $vl-red);
+    }
+}
+.btn-ctn__btn-lm {
+    @include btn($white, transparent, $white);
+
+    &:hover {
+        @include btn($vl-red, $white, $white);
+    }
+}
+@media (min-width: 480px) {
+    .header {
+        &::after {
+            transform: scale(0.45);
+            left: -61rem;
+        }
+    }
+}
+@media (min-width: 640px) {
+    .header {
+        padding: 2.5rem 1.5rem;
+        &::after {
+            transform: scale(0.5);
+            top: -62rem;
+            left: -58rem;
+        }
+    }
+    .cta__title {
+        font-size: 2.2rem;
+    }
+    .cta__subtitle {
+        font-size: 0.95rem;
+    }
+}
+@media (min-width: 768px) {
+    .header {
+        &::after {
+            transform: scale(0.55);
+            top: -63rem;
+            left: -55rem;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .header {
+        padding: 3rem 4rem;
+
+        &::after {
+            transform: scale(0.9);
+            top: -68rem;
+            left: -31rem;
+        }
+    }
+    .header__nav {
+        flex-direction: row;
+    }
+    .cta__title {
+        font-size: 2.6rem;
+    }
+    .cta__subtitle {
+        font-size: 0.98rem;
+    }
+}
+@media (min-width: 1281px) {
+    .header {
+        padding: 3rem 6rem;
+
+        &::after {
+            transform: scale(1);
+            left: -20rem;
+            top: -66rem;
+        }
+    }
+    .cta__title {
+        font-size: 3.1rem;
+    }
+    .cta__subtitle {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1536px) {
+    .header {
+        padding: 3rem 9rem;
+
+        &::after {
+            transform: scale(1.2);
+            top: -65rem;
+            left: -11rem;
+        }
+    }
+    .cta__title {
+        font-size: 3.5rem;
+    }
+    .cta__subtitle {
+        font-size: 1.18rem;
+    }
+}

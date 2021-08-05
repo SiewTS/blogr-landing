@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* ---------------
+Colors 
+---------------*/
+// text
+$white: #fff;
+$black: #000;
+//cta text
+$l-red: hsl(356, 100%, 66%);
+// cta hover bg
+$vl-red: hsl(355, 100%, 74%);
+// headings
+$vd-blue: hsl(208, 49%, 24%);
+// body copy
+$vd-gray-blue: hsl(207, 13%, 34%);
+// footer text
+$gray-blue: hsl(240, 2%, 79%);
+// footer bg
+$vd-black-blue: hsl(240, 10%, 16%);
+// body bg gradient
+$gradient-d-gray-blue: hsl(237, 17%, 21%);
+$gradient-vd-desat-blue: hsl(237, 23%, 32%);
+// intro / cta mobile nav bg gradient
+$gradient-l-red: hsl(353, 100%, 62%);
+$gradient-vl-red: hsl(13, 100%, 72%);
+
+/* ---------------
+Fonts
+---------------*/
+// family 1
+$ff-primary: "Overpass", sans-serif; //300,600
+// family 2
+$ff-secondary: "Ubuntu", sans-serif; //400,500,700
+// font sizes
+$f-size: 16px;
+// font weight
+$fw300: 300;
+$fw400: 400;
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
+
+/* ---------------
+Spacings
+---------------*/
+$space-sm: 1.6;
+$space-lg: 2;
+
+/* ---------------
+Others
+---------------*/
+$radius-lg: 6.25rem; //100px
+$radius-sm: 0.3rem;
+$maxWidth: 80rem; //~1281px
+$fixedWidth: 8.5rem; //120px
+$lightShadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.1); // ~ 0 5px 15px
+$darkShadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2); // ~ 0 5px 15px
+$transition: all 0.3s linear 3s;

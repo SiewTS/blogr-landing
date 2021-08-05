@@ -1,0 +1,207 @@
+@import "../components/btn";
+
+.nav__nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-header__menu {
+    cursor: pointer;
+}
+.nav-header__menu-open,
+.nav-header__menu-close {
+    display: inline-block;
+
+    &--hide {
+        display: none;
+    }
+}
+.nav__modal {
+    display: block;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    padding-top: 2.8rem;
+    overflow: auto;
+    // background-color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+
+    &--hide {
+        display: none;
+    }
+}
+.modal__nav-opt,
+.nav-opt__links,
+.links__container,
+.container__drop-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal__nav-opt {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    background-color: $white;
+    box-shadow: $darkShadow;
+    border-radius: $radius-sm;
+}
+.title__arr {
+    margin: 0 0.2rem;
+
+    &--show {
+        display: inline;
+    }
+    &--hide {
+        display: none;
+    }
+    &--rotate {
+        transform: rotate(180deg);
+    }
+}
+.nav-opt__links,
+.links__container {
+    width: 100%;
+}
+.links__container {
+    margin: 0 0 1.2rem;
+}
+.container__title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: $fw600;
+
+    &--active {
+        text-decoration: underline;
+    }
+}
+.container__drop-down {
+    width: 80%;
+    height: auto;
+    margin: 0.5rem 0 0;
+    padding: 1rem 0;
+    background-color: $gray-blue;
+    border-radius: $radius-sm;
+    opacity: 0.7;
+
+    &--hide {
+        display: none;
+    }
+}
+.drop-down__link {
+    padding: 0.3rem 0;
+    color: $vd-gray-blue;
+    font-weight: $fw600;
+
+    &:hover {
+        font-weight: $fw700;
+        color: $black;
+    }
+}
+.nav-opt__login-ctn {
+    border-top: 1px solid $gray-blue;
+    width: 80%;
+}
+.login-ctn__btn {
+    @extend %login-btn;
+}
+.login-ctn__btn-login {
+    @include btn($vd-gray-blue, transparent, transparent);
+}
+.login-ctn__btn-signup {
+    @include btn($white, $vl-red, $vl-red);
+}
+@media (min-width: 1024px) {
+    .nav__nav-header {
+        width: 15%;
+    }
+    .nav-header__menu-open,
+    .nav-header__menu-close {
+        display: none;
+    }
+    .nav__modal {
+        display: block;
+        position: static;
+        width: 85%;
+        height: auto;
+        padding: 0;
+    }
+    .modal__nav-opt {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: unset;
+        border-radius: unset;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .title__arr {
+        &-light {
+            display: inline-block;
+        }
+        &-dark {
+            display: none;
+        }
+    }
+    .nav-opt__links {
+        width: 40%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .links__container {
+        margin: 0;
+    }
+    .container__title {
+        color: $white;
+    }
+    .nav-opt__login-ctn {
+        width: 28%;
+        display: flex;
+        border: none;
+    }
+    .container__drop-down {
+        position: absolute;
+        width: 115px;
+        top: 5.5rem;
+        align-items: flex-start;
+        padding: 1rem;
+        background-color: $white;
+        box-shadow: $darkShadow;
+        opacity: unset;
+    }
+    .login-ctn__btn-login {
+        color: $white;
+    }
+    .login-ctn__btn-signup {
+        @include btn($l-red, $white, $white);
+
+        &:hover {
+            @include btn($white, $vl-red, $vl-red);
+        }
+    }
+}
+@media (min-width: 1281px) {
+    .nav-opt__links {
+        width: 38%;
+    }
+    .nav-opt__login-ctn {
+        width: 26%;
+    }
+}
+@media (min-width: 1536px) {
+    .nav-opt__links {
+        width: 34%;
+    }
+    .nav-opt__login-ctn {
+        width: 24%;
+    }
+}

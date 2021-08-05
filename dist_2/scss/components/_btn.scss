@@ -1,0 +1,24 @@
+@mixin btn($color, $bgcolor, $bd) {
+    color: $color;
+    background-color: $bgcolor;
+    border-color: $bd;
+}
+%login-btn {
+    display: block;
+    width: 100px;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: $radius-lg;
+    text-align: center;
+    font-weight: $fw700;
+}
+%cta-btn {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: $radius-lg;
+    padding: 0.6rem 1rem;
+    margin: 0 0.1rem;
+    font-family: $ff-secondary;
+    font-weight: $fw600;
+    cursor: pointer;
+}
