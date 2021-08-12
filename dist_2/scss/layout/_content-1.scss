@@ -6,12 +6,16 @@
     line-height: 1.3;
 }
 .txt-title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    color: $vd-blue;
 }
 .content-1__flex-ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.flex-ctn__img {
+    margin: 1rem 0;
 }
 .img__mobile-img {
     display: block;
@@ -19,35 +23,48 @@
 .img__desktop-img {
     display: none;
 }
+.flex-ctn__desc {
+    padding: 0 1.2rem;
+}
 .desc__ctn {
     text-align: center;
     padding: 0 1rem;
     max-width: 640px;
 }
 .ctn__title {
-    margin-bottom: 0;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
+    margin: 2rem 2rem 1rem;
+}
+@media (min-width: 480px) {
+    .txt-title {
+        font-size: 1.8rem;
+    }
+    .ctn__title {
+        font-size: 1.7rem;
+        margin: 2rem 3rem 1rem;
+    }
 }
 @media (min-width: 640px) {
     .txt-title {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     .ctn__title {
-        font-size: 1.2rem;
+        font-size: 1.9rem;
+        margin: 2rem 4rem 1rem;
     }
 }
 @media (min-width: 1024px) {
     .content-1 {
         overflow: hidden;
     }
-    .txt-title {
-        font-size: 1.8rem;
-    }
+    // .txt-title {
+    //     font-size: 1.8rem;
+    // }
     .content-1__flex-ctn {
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        top: -8rem;
+        top: -11rem;
     }
     .flex-ctn__img {
         order: 2;
@@ -69,16 +86,21 @@
             text-align: left;
         }
         &__title {
-            font-size: 1.35rem;
+            font-size: 1.6rem;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
 @media (min-width: 1281px) {
-    .txt-title {
-        font-size: 1.85rem;
+    .content-1__flex-ctn {
+        top: -8rem;
     }
+    // .txt-title {
+    //     font-size: 1.85rem;
+    // }
     .ctn__title {
-        font-size: 1.38rem;
+        font-size: 1.7rem;
     }
     .img__desktop-img {
         transform: scale(1);
@@ -88,12 +110,12 @@
     }
 }
 @media (min-width: 1536px) {
-    .txt-title {
-        font-size: 2rem;
-    }
-    .ctn__title {
-        font-size: 1.4rem;
-    }
+    // .txt-title {
+    //     font-size: 2rem;
+    // }
+    // .ctn__title {
+    //     font-size: 1.4rem;
+    // }
     .img__desktop-img {
         transform: scale(1.05);
         position: relative;
