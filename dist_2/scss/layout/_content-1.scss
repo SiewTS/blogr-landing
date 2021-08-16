@@ -15,10 +15,14 @@
     align-items: center;
 }
 .flex-ctn__img {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    width: 100%;
 }
 .img__mobile-img {
     display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
 }
 .img__desktop-img {
     display: none;
